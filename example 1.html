@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Basic Login page</title>
+        
+        <style>
+          
+        #mybox {
+            position: absolute;
+            width:400px;
+            height:1100;
+            border:2px solid grey;
+            padding: 20px;
+            align:center;
+            border-bottom: 5px;
+            background-color:rgba(207, 245, 232, 0.893);
+            border-radius: 20px;
+            margin-left: 630px;
+        }
+        h2{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color:rgb(3, 68, 47) ;
+            position: relative;
+            top:5px; 
+            bottom:5px;
+            font-size:40px;
+        }
+
+       body{
+        position: relative;
+        background-color:rgba(44, 117, 97, 0.893);
+       }
+       .container{
+        width: 50%;
+        margin:0 auto;
+        place-items: center;
+       }
+       
+    
+        </style>
+    </head>
+
+    <body>
+        
+        <div id="mybox">
+                
+        <h2 align ="center" id="log"> LOGIN FORM </h2>
+        <p style=" font-family:Georgia, 'Times New Roman', Times, serif; font-size: 20px;">
+         <b>This login form has a beautiful design with a login form
+             at center of the page and background with gradient. It is
+              created using pure HTML and CSS only.</b></p><br>
+
+        <div class="container">
+        <form  style="border-radius: 20px;" action="https://www.google.com/" target="_blank" >
+            
+            <label  style=" font-size: 20px;" for ="fname"> <b>FIRST NAME:</b> </label><br>    
+            <input style="border-radius: 5px;"
+             type="text" id="fname"><br><br>
+            <label style=" font-size: 20px;" for ="lname"><b>LAST NAME: </b></label><br> 
+            <input style="border-radius: 5px;" type="text" id="lname"><br><br>
+
+            <label style=" font-size: 20px;" for ="fgender"><b>Select Gender</b> </label><br>
+            <input style="border-radius: 5px;" type="radio" id="Male" name="gender" value="Male">
+            <label style=" font-size: 20px;" for="Male">Male</label><br>
+            <input style="border-radius: 5px;" type="radio" id="Female" name="gender" value="Female">
+            <label style=" font-size: 20px;" for="Female">Female</label><br>
+            <input style="border-radius: 5px;" type="radio" id="Other" name="gender" value="Other">
+            <label style=" font-size: 20px;" for="Other">Other</label><br> <br> 
+
+            <label style=" font-size: 20px;" for ="fdob"><b>Date of Birth</b> </label><br>
+            <input style="border-radius: 5px;" type="date" id="fdob"><br><br>
+
+            <label style=" font-size: 20px;" for ="fe"><b>Email</b> </label><br>
+            <input style="border-radius: 5px;" type="Email" id="fe"><br><br>
+
+            <label style=" font-size: 20px;" for ="fadd"><b>Enter Address </b></label><br>
+            <textarea style="border-radius: 3px;" name="msg" rows="4" cols="30"></textarea><br><br>
+
+            
+            <label style=" font-size: 20px;"for ="fsc"><b>Select Course </b> </label><br>
+            <select  style="border-radius: 5px;">
+                <option value ="Web Development">Web Development</option>
+                <option value ="Artifical Intellegence">Artifical Intellegence</option>
+                <option value ="Cyber Security">Cyber Security</option>
+                <option value ="Data Science">Data Science</option>
+                <option value ="Python">Python</option>
+                <option value ="C">C</option>
+                <option value ="C++">C++</option>
+                <option value ="Java">Java</option>
+            </select><br><br>
+
+            <label style=" font-size: 20px;" for ="fd"><b>Select Duration</b> </label><br>
+            <input style="border-radius: 5px;" list="month" name="month">
+            <datalist id="month">
+                <option value="Jan-Feb">
+                <option value="Feb-March">
+                <option value="March-April">
+                <option value="April-May">
+                <option value="May-June">
+                <option value="June-July">
+                <option value="July-Aug">
+            </datalist><br><br>
+
+            <label style=" font-size: 20px;" for ="fe"><b>Create Password</b> </label><br>
+            <input style="border-radius: 5px;" type="text" name="fe"><br>
+            <label style=" font-size: 20px;" for ="fre"><b>ReEnter Password </b>  </label><br>
+            <input style="border-radius: 5px;" type="password" name="fre"><br><br>
+
+            <label style=" font-size: 20px;" for ="fac"><b>Upload Aadhar Card</b> </label><br>
+            <input  style="border-radius: 5px;" type="file" id="fac"><br><br><br>
+
+            <button  style=" width: 220px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 2px;
+            padding: 8px;"
+              type="button" onclick="alert('You have Successfully Login')"><b> Submit</b> </button><br>
+
+        <form>
+        </div>
+        </div>
+        </form>
+    </body>
+</html>
